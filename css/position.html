@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>positions</title>
+	<style type="text/css">
+		.parent{
+			height: 750px;
+			width: 100%;
+			background: yellow;
+			margin: 50px;
+			position: relative;
+		}
+		.child1{
+			height: 250px;
+			width: 100%;
+			background: green;
+			position: relative;
+			/*top: 50px;*/
+			/*bottom: 50px;
+			right: 60px;*/
+		    /*left: 70px;*/
+		}
+		.child2{
+			height: 250px;
+			width: 100%;
+			background: blue;
+			position: fixed;
+			/*top: 50px;
+			left: 50px;*/
+			top: 0;
+			left: 0;
+
+		}
+		.child3{
+			height: 350px;
+			width: 100%;
+			background: grey;
+		}
+	</style>
+</head>
+<body>
+  <!--1.static--><!--default property based on block and inline elements positioned on wed page-->
+  <!--2.Relative --> <!-- Works Same As Static But it was flexible to move from its parent its origin position -->
+	<!-- 3.Absolute --> <!-- Used to Give Position Based on the Parent Position. It will work only when parent associated with Relative Position Or else it will stick to html body. -->
+	<!-- 4.Fixed -->  <!-- Used To fix a element at particular position with respect to brower. -->
+
+	<!-- 5.Sticky -->  <!-- Used to Stick the element when it reaches a particular position -->
+	<div class="parent"> Parent
+		<div class="child1">Child1</div>
+		<div class="child2">Child2</div>
+		<div class="child3">Child3</div>
+	</div>
+</body>
+</html>

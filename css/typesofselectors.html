@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>selectors types</title>
+	<style type="text/css">
+		/*class selectors*/
+		.demoforselectors{
+			width: 500px;
+			height: 700px;
+			background: grey;
+		}
+		/*id selector*/
+		#demoidselectors{
+			width: 750px;
+			height: 500px;
+			background: yellow;
+		}
+		/*combination selectors*/
+		#section1.div3{
+			width: 250px;
+			height: 250px;
+			background: green;
+		}
+		/*element selctor*/
+        #section.div{
+	        background: grey
+        }
+         h2{
+	        color: white;
+	        background: black;
+        }
+ 
+        /*4.Universal Selector*/
+ 
+        /*{
+	       background: yellow;
+        }*/
+        .btn{
+	        background:green;
+	        padding: 1%;
+	        color: white;
+	        border-radius: 20px;
+	        width: auto;
+	        height: auto; 
+            }
+ 
+         /*psuedo class selectors*/
+ 
+ 
+          .btn:hover{
+	       background: blue;
+	       color: black;
+           }
+ 
+         .input1:focus{
+	        background: green;
+	        height: 50px;
+	        width: 100px;
+	        color: white;
+           }
+ 
+       div:first-child{
+	      background: brown;
+         }
+  </style>
+         
+         <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+ 
+	<button class="btn">Button</button>
+ 
+	<input type="text" name="username" class="input1">
+ 
+<!-- 1.class selector
+	2. id selector
+	3. element selector
+	4. psuedo class selector
+	5. psuedo element selector
+	6. combination selector -->
+<div class="demoforclassSelector"></div>
+<div id="demoIdSelector"></div>
+ 
+	<section id="section1">
+<div class="div1">1</div>
+<div class="div2">2</div>
+<div class="div3">3</div>
+</section>
+<section id="section2">
+<div class="div1">1</div>
+<div class="div2">2</div>
+<div class="div3">3</div>
+</section>
+ 
+	<div>
+<h1>Heading 1</h1>
+<h3>Heading 3</h3>
+<h2>Heading 2</h2>
+<h2>Heading 4</h2>
+</div>
+
+
+<button . class="btn">Button</button>
+
+<input type="text=" name="surname" class="input1">
+
+</body>
+</html>
