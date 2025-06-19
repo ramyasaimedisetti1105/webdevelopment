@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+</head>
+<body>
+  <h1  onmouseover="mouseOver()" id="head" onmouseout="mouseOut()">
+   This is heading
+</h1>
+
+<input onkeypress="keyP(this)" placeholder="keypress" />
+<input onkeyup="keyP2(this)" placeholder="keyup" />
+</body>
+<script>
+    let h1Tag = document.getElementById("head");
+    
+    function mouseOver(){
+        h1Tag.style.Color = "red";
+    }
+    function mouseOut(){
+        h1Tag.style.color = "green";
+    }
+    function keyP(params) {
+      h1Tag.innerText = params.value;
+    }
+ 
+    function keyP2(params) {
+      h1Tag.innerText = params.value;
+    }
+</script>
+</html>

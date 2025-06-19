@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Manupulation</title>
+    <style>
+      ul #listItem {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="test">DOM Manupulation</h1>
+    <ul>
+      <li>Name</li>
+      <li id="listItem">Company</li>
+      <li>College</li>
+    </ul>
+
+    <ol>
+      <li class="li-class">List 1</li>
+      <li class="li-class">List 2</li>
+      <li class="li-class">List 3</li>
+    </ol>
+  </body>
+  <script>
+    // 1 Stage.select the element
+
+    //Selectors:- 1.id selector;
+    let idSelector = document.getElementById("test");
+    console.log(idSelector);
+
+    // 2.Tag selector
+    let elementSelectedUsingTagSelector =
+      document.getElementsByTagName("li")[2];
+    console.log(elementSelectedUsingTagSelector);
+
+    // 3. class selector
+
+    let elemenstByClass = document.getElementsByClassName("li-class")[2];
+    console.log(elemenstByClass);
+
+    //4. QuerySelector
+
+    let q = document.querySelector("ul #listItem");
+
+    console.log(q);
+
+    //5. QuerySelectorAll
+
+    let q2 = document.querySelectorAll("li")[0];
+
+    console.log(q2);
+    // 2 Stage. Modify the content in that element
+
+    // 1.InnerText or innerHtml
+    idSelector.innerText = "Modified TExt";
+
+    elementSelectedUsingTagSelector.innerText = "Modified using Tag selector";
+
+    elemenstByClass.innerHTML = "<h1>Modified using class selector</h1>";
+
+    q.innerText = "Query Selector Modified";
+
+    q2.innerText = "Changed by using Query selector all";
+
+    q2.style.fontFamily = "sans-serif";
+  </script>
+</html>

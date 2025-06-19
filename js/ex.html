@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example</title>
+  </head>
+  <body>
+    <ul id="ul1"></ul>
+    <table>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    let uid = document.getElementById("ul1");
+    for (let i = 0; i < 6; i++) {
+      let child = document.createElement("li");
+      child.innerText = i;
+      uid.appendChild(child);
+    }
+  </script>
+</html>

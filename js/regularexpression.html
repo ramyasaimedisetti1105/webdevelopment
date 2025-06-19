@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input onkeyup="validateInput(this)" placeholder="enter email" />
+    <p id="validate"></p>
+  </body>
+  <script>
+    const Regexp = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+    // const Regexp = /^\+91[0-9]{10}$/;
+ 
+    const pTag = document.getElementById("validate");
+    function validateInput(params) {
+      if (!Regexp.test(params.value)) {
+        pTag.innerText = "Only Gmail are Accepted please look what you entered";
+        pTag.style.color = "red";
+        return;
+      } else {
+        pTag.innerText = "Email Accepted!!";
+        pTag.style.color = "green";
+      }
+    }
+  </script>
+</html>
+ 
+has context menu
+
+
+has context menu

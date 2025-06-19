@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="email" placeholder="email" name="user-email" />
+    <p id="user-email"></p>
+    <input type="text" name="user-name" />
+    <p id="user-name"></p>
+    <button onclick="submitForm()">Submit</button>
+  </body>
+  <script>
+    const allInputTags = document.getElementsByTagName("input");
+ 
+    function submitForm() {
+      for (let i = 0; i < allInputTags.length; i++) {
+        console.log(allInputTags[i]);
+        if (allInputTags[i].value == "") {
+          const pTag = document.getElementById(allInputTags[i].name);
+          pTag.innerText = "You Must enter this field";
+          pTag.style.color = "red";
+          return;
+        } else {
+          const pTag = document.getElementById(allInputTags[i].name);
+          pTag.innerText = "Accepted";
+          pTag.style.color = "green";
+        }
+      }
+      alert("Form sumitted");
+    }
+  </script>
+</html>
